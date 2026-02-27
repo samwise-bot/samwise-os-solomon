@@ -21,3 +21,4 @@
 - Long-term expectation: assistant can handle broader personal-finance operations; current execution phase is Livefolio + paper-trading experiments.
 - Expects large-universe, multi-subagent stock sweeps with detailed conviction filtering and explicit ADD/REMOVE/WATCHLIST rationale (sentiment + fundamentals + trend context).
 - Wants filing-analysis efficiency: cache synthesized 10-K/10-Q learnings locally; avoid full daily rereads unless new filings or refresh triggers justify it.
+- Requires strict separation between Livefolio stream and paper-trading stream (separate files/reporting).
