@@ -13,3 +13,5 @@ _Last updated: 2026-02-27_
 9. **Adaptation:** Full RCCA per trade (Root Cause & Corrective Action) with rule updates.
 10. **Persistence:** Log requirements/changes to memory so they survive resets.
 11. **Execution style:** Actionable positions only; high-conviction output; run workflow proactively without permission prompts.
+12. **Actionability gate:** New tickers must be enterable today or they go to watchlist.
+13. **Portfolio handling:** Existing held tickers can remain if still within thresholds; explicitly flag sells when exit criteria hit.
