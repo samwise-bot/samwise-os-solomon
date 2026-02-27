@@ -1,23 +1,43 @@
 # LIVEFOLIO.md
 
-ALGO_VERSION: v2026.02.27-ev1
-Lifecycle Stage: Paper launch (T+0, pre-first fills)
+ALGO_VERSION: v2026.02.27-intraday-r3
+Lifecycle Stage: Paper launch (T+0, conditional orders staged)
 Start Date: 2026-02-27
 Benchmark: VOO
 
-## Planned Entries (Actionable Today)
-| Ticker | Entry Trigger | Stop / Invalidation | Target | Horizon | Thesis Integrity | Catalyst Calendar |
-|---|---:|---|---:|---|---|---|
-| LLY | 1022.02 limit | Stop 983.29; invalidate on heavy-volume close < 50DMA | 1103.36 | 2-15 trading days | Intact (pre-fill) | Macro: PPI/Fed speakers; Company: new 8-K / obesity-drug approval headlines |
-| META | 657.01 limit | Stop 635.80; invalidate on heavy-volume close < 50DMA | 701.56 | 2-15 trading days | Intact (pre-fill) | Macro: rates/Fed tone; Company: AI capex + ad-demand revisions / new 8-K |
-| MSFT | 401.72 limit | Stop 390.73; invalidate on heavy-volume close < 50DMA | 424.79 | 2-15 trading days | Intact (pre-fill) | Macro: rates growth-factor sensitivity; Company: Azure/AI demand updates / new 8-K |
+## Executed Paper Orders (Today)
+Status: **Conditional entries placed (not yet marked filled)**
+
+| Ticket | Type | Trigger / Entry | Stop | Target | Allocation | Notional Reserved | Status |
+|---|---|---:|---:|---:|---:|---:|---|
+| LLY | Buy-stop | 1033.00 | 983.30 | 1103.40 | 55% | $55.00 | STAGED |
+| META | Buy-stop | 663.60 | 635.80 | 701.60 | 45% | $45.00 | STAGED |
+
+Execution policy:
+- If trigger prints intraday, mark fill at trigger (or next traded price in paper model) with conservative slippage.
+- If neither trigger prints by close, both remain watchlist and no fill is recorded.
+
+## Allocation Plan (Current)
+- Cash available: **$100.00**
+- Reserved for staged entries: **$100.00**
+- Filled exposure: **$0.00**
+
+## REMOVE / SELL
+- None (no active filled positions).
+
+## Active Watchlist (Ranked)
+| Ticker | Trigger | Stop / Invalidation | Target | Action |
+|---|---:|---|---:|---|
+| NVDA | 185.80–186.70 reclaim | 177.20 / close < 177.20 | 201.10 | WATCHLIST |
+| AMZN | 210.00–213.90 reclaim | 199.80 / close < 199.80 | 225.00 | WATCHLIST |
+| BAC | 52.14 reclaim | 49.16 / close < 49.16 | 57.53 | WATCHLIST |
 
 ## Slippage/Execution Assumptions
-- Limit orders only near trigger.
-- If open gap > +2% vs trigger: cut position size by 50%.
-- Fractional shares allowed for $100 sleeve sizing.
+- Trigger entries via buy-stop simulation.
+- If open gap > +2% above trigger: cut planned allocation by 50%.
+- Fractional shares allowed in $100 sleeve.
 
 ## Performance Snapshot
 - Portfolio return since start: 0.00% (no fills yet)
-- VOO return since start baseline: 0.00% (baseline initialized same day)
+- VOO return since start baseline: 0.00%
 - Relative alpha: 0.00%
