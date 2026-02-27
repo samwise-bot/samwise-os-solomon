@@ -15,3 +15,4 @@ _Last updated: 2026-02-27_
 11. **Execution style:** Actionable positions only; high-conviction output; run workflow proactively without permission prompts.
 12. **Actionability gate:** New tickers must be enterable today or they go to watchlist.
 13. **Portfolio handling:** Existing held tickers can remain if still within thresholds; explicitly flag sells when exit criteria hit.
+14. **Research engine:** Apply `skills/company-research` workflow by default in stock-analysis jobs; keep it in daily 1% refinement mode.
