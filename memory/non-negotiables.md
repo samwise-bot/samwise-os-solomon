@@ -12,3 +12,4 @@ _Last updated: 2026-02-27_
 8. **Process control:** Track a $100 paper portfolio daily.
 9. **Adaptation:** Full RCCA per trade (Root Cause & Corrective Action) with rule updates.
 10. **Persistence:** Log requirements/changes to memory so they survive resets.
+11. **Execution style:** Actionable positions only; high-conviction output; run workflow proactively without permission prompts.

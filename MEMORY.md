@@ -13,3 +13,4 @@
 - Prefers lower turnover: retain positions when thesis remains intact to reduce tax drag.
 - Expects adaptive process control: if performance slips, run full RCCA (Root Cause & Corrective Action) per trade and update the team’s selection/risk/execution process accordingly.
 - Approved a persistent pinned trading requirements checklist; maintain and enforce it in every trade report (`memory/non-negotiables.md`).
+- Prefers decisive operation: actionable positions only, high conviction, and proactive execution of the workflow without permission prompts.
