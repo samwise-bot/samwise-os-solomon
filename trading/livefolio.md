@@ -6,21 +6,20 @@ Start Date: 2026-02-27
 Benchmark: VOO
 
 ## Executed Paper Orders (Today)
-Status: **Conditional entries placed (not yet marked filled)**
+Status: **LLY filled, META still conditional**
 
-| Ticket | Type | Trigger / Entry | Stop | Target | Allocation | Notional Reserved | Status |
-|---|---|---:|---:|---:|---:|---:|---|
-| LLY | Buy-stop | 1033.00 | 983.30 | 1103.40 | 55% | $55.00 | STAGED |
-| META | Buy-stop | 663.60 | 635.80 | 701.60 | 45% | $45.00 | STAGED |
+| Ticket | Type | Entry | Stop | Target | Shares | Allocation | Notional | Status |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| LLY | Buy | 1024.76 | 983.30 | 1103.40 | 0.053671 | 55.04% | $55.00 | FILLED |
+| META | Buy-stop | 663.60 | 635.80 | 701.60 | TBD | 45.00% | $45.00 | STAGED |
 
-Execution policy:
-- If trigger prints intraday, mark fill at trigger (or next traded price in paper model) with conservative slippage.
-- If neither trigger prints by close, both remain watchlist and no fill is recorded.
+Fill confirmation source: user-provided broker screenshot at 06:46 PT (LLY avg cost 1024.76; market value 55.07; today P/L +0.13%).
 
 ## Allocation Plan (Current)
-- Cash available: **$100.00**
-- Reserved for staged entries: **$100.00**
-- Filled exposure: **$0.00**
+- Starting capital: **$100.00**
+- Filled exposure: **$55.00 (LLY)**
+- Cash unallocated: **$45.00**
+- Conditional reserve: **$45.00 (META trigger pending)**
 
 ## REMOVE / SELL
 - None (no active filled positions).
