@@ -1,59 +1,55 @@
-# Revenue Architecture Update — Trading Contribution for $300/mo Target
+# Revenue Architecture Update — Trading Contribution for $300+/mo Target
 
 Date: 2026-02-27
-Assumption used: target = **$300/mo**, hard floor = **$100/mo** (per filename + directive context). If Ian confirms different values, recompute immediately.
+Policy baseline (corrected): **target >= $300/mo**, **hard floor >= $200/mo**.
 
 ## Executive Take
-- Trading should fund a **reliable portion** of monthly goal, not the whole stack.
-- Under current long-only, lower-turnover framework, target trading contribution should be **$90–$150/mo** in normal months.
-- Seed capital to support that contribution with reasonable stability: **$6k–$10k**.
-- Full $300/mo from trading alone is possible but less reliable unless capital is materially higher.
+- Trading should contribute a reliable slice, not carry full revenue.
+- Recommended trading contribution: **$100–$150/mo** under current long-only, lower-turnover framework.
+- Seed capital to support that range with reasonable stability: **$7k–$12k**.
+- Floor reliability (>=$200 in weak months) should come primarily from non-trading recurring streams.
 
 ## Seed Capital by Trading Contribution
-Formula: `Seed = Monthly Trading Contribution / Net Monthly Return Assumption`
+Formula: `Seed = monthly trading contribution / net monthly return assumption`
 
-| Scenario | Net Return Assumption (monthly, net of slippage) | Trading Contribution Goal | Seed Capital Needed | Risk / DD Profile |
+| Scenario | Net Monthly Return (after slippage) | Trading Contribution Goal | Seed Needed | Risk / DD |
 |---|---:|---:|---:|---|
-| Conservative | 1.0% | $90/mo | $9,000 | Lower variance, DD ~8–12% |
-| Base | 1.8% | $120/mo | ~$6,700 | Moderate variance, DD ~12–18% |
-| Aggressive | 3.0% | $150/mo | $5,000 | Higher variance, DD ~18–28% |
+| Conservative | 1.0% | $100 | $10,000 | DD ~8–12% |
+| Base | 1.8% | $120 | ~$6,700 | DD ~12–18% |
+| Aggressive | 3.0% | $150 | $5,000 | DD ~18–28% |
 
-## If Trading Tries to Cover Full $300/mo Alone
-- 1.0% net/mo: **$30,000** seed
-- 1.8% net/mo: **~$16,700** seed
-- 3.0% net/mo: **$10,000** seed
+## If Trading Tries to Cover Full $300 Alone
+- 1.0%: **$30,000**
+- 1.8%: **~$16,700**
+- 3.0%: **$10,000**
 
-Interpretation: full-coverage is capital-intensive for reliability; blended revenue is better risk-adjusted.
+Conclusion: possible, but less reliable than blended model.
 
-## Recommended Blended Model (Primary Recommendation)
-Target stack:
-- **Trading sleeve:** $120/mo expected (40%)
-- **Non-trading stream A (retainer/service/automation support):** $120/mo (40%)
-- **Non-trading stream B (micro-product/affiliate/template/digital asset):** $60/mo (20%)
-- **Total expected:** $300/mo
+## Recommended Blended Model (for >=$300 target, >=$200 floor)
+- **Trading:** $100–$150 expected (variable)
+- **Non-trading recurring A:** $120 baseline
+- **Non-trading recurring B:** $80 baseline
+- **Expected total:** $300–$350+
+- **Hard-floor design:** Non-trading baseline alone set to **>=$200/mo**.
 
-## Weak-Month Resilience Design (must stay >=$100)
-1. Set **floor budget** from non-trading base streams first:
-   - Keep at least **$100/mo contracted/recurring** outside trading.
-2. Trading risk throttle:
-   - If rolling 20-trade expectancy drops below threshold or DD breach triggers, cut risk by 30–50%.
-3. Carry a 2-month reserve buffer:
-   - Reserve target = **$200+** (2 x hard floor) to absorb one weak month.
-4. Monthly rebalance rule:
-   - If total run-rate < $250 for 2 consecutive months, increase non-trading allocation effort, not trading leverage.
+## Weak-Month Resilience Design (must keep >=$200)
+1. **Baseline-first rule:** lock non-trading recurring commitments at **$200+** before scaling risk.
+2. **Trading drawdown throttle:** if expectancy or DD trigger trips, cut risk 30–50% immediately.
+3. **Reserve buffer:** maintain at least **$400** (2 months of floor gap coverage for execution slippage/variance).
+4. **Escalation rule:** if 2-month rolling total < $260, shift effort to non-trading acquisition, not leverage.
 
-## Constraints (Why this structure)
-- Long-only + lower turnover means smoother operations but fewer independent bets.
-- Trading income is path-dependent month to month.
-- Non-trading streams reduce dependency on market regime and improve minimum-floor reliability.
-- Tax-aware holding improves long-run drag but can delay realization timing.
+## Constraints (Why)
+- Long-only + lower turnover = fewer independent bets; month-to-month variability persists.
+- Income realization timing is path-dependent.
+- Tax-aware holds improve long-run drag but can defer realized gains.
+- Non-trading recurring revenue stabilizes floor reliability.
 
 ## Recommendation
-- **Keep trading as secondary contributor (30–50% of monthly goal) until 6–12 months live edge is proven.**
-- Build guaranteed non-trading baseline to hard floor first, then scale trading contribution.
+Trading remains **secondary contributor** until 6–12 months of live audited expectancy confirms stability.
 
 ## Source Context
-- `MEMORY.md` (long-only, lower turnover, stock-only, adaptive process control)
+- `MEMORY.md`
 - `memory/non-negotiables.md`
-- `trading/STATE.md`, `trading/ALGO_CHANGELOG.md`, `trading/livefolio.md`
-- Note: `memory_search` returned no additional indexed snippets; this is scenario-based planning with explicit assumptions.
+- `trading/STATE.md`
+- `trading/ALGO_CHANGELOG.md`
+- `trading/livefolio.md`
