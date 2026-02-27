@@ -16,3 +16,4 @@ _Last updated: 2026-02-27_
 12. **Actionability gate:** New tickers must be enterable today or they go to watchlist.
 13. **Portfolio handling:** Existing held tickers can remain if still within thresholds; explicitly flag sells when exit criteria hit.
 14. **Research engine:** Apply `skills/company-research` workflow by default in stock-analysis jobs; keep it in daily 1% refinement mode.
+15. **Filings efficiency:** Cache synthesized 10-K/10-Q insights locally after ingestion; do not re-read full filings daily unless a new filing arrives or a refresh trigger is hit.

@@ -42,6 +42,15 @@ Run these tracks in parallel when possible, then merge:
 ## Source Priority
 Use `references/source-priority.md` and prefer top-priority sources first. If a source fails, use next fallback and mark fallback in output.
 
+## Filings Cache Policy (required)
+- After ingesting a 10-K/10-Q, write/update a local synthesis cache entry instead of re-reading full filings every day.
+- Re-read full filing only when one of these triggers occurs:
+  1) new 10-Q/10-K/8-K earnings filing,
+  2) major guidance change or thesis break,
+  3) scheduled freshness refresh (weekly light refresh, monthly deep refresh).
+- Daily flow should read cached synthesis first, then only fetch deltas/news since last update.
+- Always stamp cache entries with `as_of`, `filing_date`, and `last_full_read`.
+
 ## Required Output Contract
 Follow `references/output-schema.md` exactly.
 
