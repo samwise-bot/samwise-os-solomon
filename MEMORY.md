@@ -11,3 +11,4 @@
 - Wants daily reporting of thesis, algorithm changes, and exact plays; all context/process must be persisted locally for reliable cron/agent handoff.
 - For this portfolio sleeve, mandate is long-only (no shorting).
 - Prefers lower turnover: retain positions when thesis remains intact to reduce tax drag.
+- Expects adaptive process control: if performance slips, run full RCCA (Root Cause & Corrective Action) per trade and update the team’s selection/risk/execution process accordingly.
