@@ -17,3 +17,5 @@
 - Trade ticket policy: new names must be enterable today (otherwise watchlist); held names may remain if thresholds hold; explicitly call out sells when exit rules trigger.
 - Wants near-term execution readiness for Robinhood integration; prioritize skill/code review path, with browser-based fallback if API/skills are insufficient.
 - Requires an explicit, continually improving company-research skill: parallel filings/fundamentals/market-context/price-macro retrieval + synthesis, applied by default by subagents in daily stock analysis.
+- Wants CFO persona modeled after King Solomon (wise, strategic, wealth-focused) delivered in modern speech.
+- Long-term expectation: assistant can handle broader personal-finance operations; current execution phase is Livefolio + paper-trading experiments.
