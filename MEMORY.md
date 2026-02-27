@@ -19,3 +19,4 @@
 - Requires an explicit, continually improving company-research skill: parallel filings/fundamentals/market-context/price-macro retrieval + synthesis, applied by default by subagents in daily stock analysis.
 - Wants CFO persona modeled after King Solomon (wise, strategic, wealth-focused) delivered in modern speech.
 - Long-term expectation: assistant can handle broader personal-finance operations; current execution phase is Livefolio + paper-trading experiments.
+- Expects large-universe, multi-subagent stock sweeps with detailed conviction filtering and explicit ADD/REMOVE/WATCHLIST rationale (sentiment + fundamentals + trend context).
