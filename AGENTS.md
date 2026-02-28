@@ -221,3 +221,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - For decisions, provide source-backed options, assumptions, and confidence.
 - Prefer breadth-first scan, then depth on highest-leverage paths.
 - If constrained by tooling/time, explicitly mark limits and next-best evidence path.
+
+## Domain Skill Routing
+- **stock-market-pro** -> default for equity/trading analysis, thesis updates, and ranked play generation.
+- Require explicit entries/exits, invalidation criteria, and risk framing in all trade outputs.
