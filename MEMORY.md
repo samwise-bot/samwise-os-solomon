@@ -23,3 +23,4 @@
 - Wants filing-analysis efficiency: cache synthesized 10-K/10-Q learnings locally; avoid full daily rereads unless new filings or refresh triggers justify it.
 - Requires strict separation between Livefolio stream and paper-trading stream (separate files/reporting).
 - Wants proactive capability growth via operator-model execution: asynchronous multi-subagent workflows, continuous research loops, and expanded finance scope including crypto/BTC research under separate risk controls.
+- Approved SOP v1.1 upgrades: Data Reliability Layer (source tiers, fallback chain, freshness/evidence scoring with hard no-trade threshold), concentration-cap override rule, and async publish cutoff handling.
