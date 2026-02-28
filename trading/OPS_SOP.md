@@ -1,6 +1,6 @@
 # Solomon CFO Operating SOP (v1.1)
 
-ALGO_VERSION: v2026.02.27-ops-v1.1
+ALGO_VERSION: v2026.02.27-ops-v1.2
 
 ## 1) Operating Model
 - Solomon-core = orchestrator (single writer for canonical portfolio state).
@@ -61,10 +61,23 @@ ALGO_VERSION: v2026.02.27-ops-v1.1
 
 ## 7) Crypto/BTC Lane (Separate)
 - Separate risk budget, separate reporting section, separate limits.
-- Daily lightweight monitor + weekly deep-dive.
+- Runs 24/7 independent of equity market hours.
 - No contamination of core equity sleeve constraints.
+- Research-only by default; no execution without Ian authorization.
 
-## 8) KPI Pack (Weekly)
+## 8) Crypto 24/7 Cadence + Consensus Loop (v1.2)
+- Continuous heartbeat monitor every 15 minutes (price/volatility/funding/liquidation/headlines).
+- Research refresh every 2 hours (thesis rescoring, catalyst board, risk-state recompute).
+- Deep synthesis checkpoint every 6 hours (00:00 / 06:00 / 12:00 / 18:00 PT).
+- Consensus-ready requirement:
+  1) >=2 independent source classes,
+  2) freshness SLA pass,
+  3) risk coherence pass,
+  4) mandate alignment,
+  5) Sam + Solomon confidence >= B.
+- If consensus fails or risk triggers breach, escalate and remain no-trade.
+
+## 9) KPI Pack (Weekly)
 - Decision quality: hit rate, avg win/loss, expectancy, thesis fidelity
 - Risk: max drawdown, return volatility, concentration index, beta drift
 - Ops: report timeliness, freshness SLA, agent turnaround p50/p95, evidence density
